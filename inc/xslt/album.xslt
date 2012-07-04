@@ -112,7 +112,18 @@
 								<xsl:value-of select="substring-before(filename,'-')"/>
 								<xsl:text>/</xsl:text>
 								<xsl:value-of select="substring-before(filename,'.')"/>
-								<xsl:text>.jpg</xsl:text><!-- don't use video extention -->
+								<xsl:text>.</xsl:text><!-- don't use video extention -->
+								<xsl:variable name="extention">
+									<xsl:value-of select="substring-after(filename,'.')"/>
+								</xsl:variable>
+								<xsl:choose>
+									<xsl:when test="$extention = 'mp4' or $extention = 'webm'">
+										<xsl:text>jpg</xsl:text>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:value-of select="$extention"/>
+									</xsl:otherwise>
+								</xsl:choose>
 							</xsl:variable>
 
 							<li class="liAlbumPhoto">

@@ -52,4 +52,14 @@
 		<photo_loc>Camping</photo_loc>
 		<thumb_caption>Starfish</thumb_caption>
 	</photo>
+	<photo id="5">
+		<filename>2012-07-04.png</filename>
+		<geo>
+			<lat>49.28352590109962</lat>
+			<lon>-123.1141448020935</lon>
+		</geo>
+		<photo_city>Vancouver, BC</photo_city>
+		<photo_loc>VanArts</photo_loc>
+		<thumb_caption>Purple squigle</thumb_caption>
+	</photo>
 </album>

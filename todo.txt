@@ -1,1 +1,2 @@
 My first commit to the staging area
+I thought of another idea, let's also stage this task
